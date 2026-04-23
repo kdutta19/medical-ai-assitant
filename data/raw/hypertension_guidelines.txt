@@ -1,0 +1,26 @@
+ACC/AHA 2017 Hypertension Guidelines Summary
+
+Definition and Classification
+Hypertension is defined as a systolic blood pressure (SBP) of 130 mmHg or higher, or a diastolic blood pressure (DBP) of 80 mmHg or higher. This threshold was revised downward from the previous JNC 7 definition of 140/90 mmHg based on outcome data showing increased cardiovascular risk at lower BP levels.
+
+Blood pressure categories are as follows. Normal blood pressure is defined as SBP less than 120 mmHg and DBP less than 80 mmHg. Elevated blood pressure is SBP 120-129 mmHg and DBP less than 80 mmHg. Stage 1 hypertension is SBP 130-139 mmHg or DBP 80-89 mmHg. Stage 2 hypertension is SBP 140 mmHg or higher or DBP 90 mmHg or higher. Hypertensive crisis is SBP greater than 180 mmHg and/or DBP greater than 120 mmHg.
+
+Measurement Technique
+Blood pressure should be measured using a validated device. The patient should be seated quietly for at least 5 minutes before measurement, feet flat on the floor, back supported, and arm at heart level. Two or more readings should be obtained and averaged. Out-of-office measurements, including home blood pressure monitoring and ambulatory blood pressure monitoring (ABPM), are recommended to confirm diagnosis and guide management.
+
+Treatment Thresholds
+Lifestyle modification is recommended for all patients with elevated BP and hypertension. Pharmacologic treatment is recommended for primary prevention of CVD in adults with no known CVD and an estimated 10-year CVD event risk of 10% or higher, with a BP goal of less than 130/80 mmHg. For adults with known clinical CVD, pharmacologic treatment is recommended at SBP 130 mmHg or higher, with a BP goal of less than 130/80 mmHg.
+
+First-Line Pharmacologic Agents
+First-line agents for hypertension include thiazide or thiazide-type diuretics (chlorthalidone preferred over hydrochlorothiazide due to longer half-life and superior outcomes data), ACE inhibitors, angiotensin II receptor blockers (ARBs), and dihydropyridine calcium channel blockers (CCBs). Beta-blockers are not recommended as first-line agents unless the patient has a specific compelling indication such as heart failure with reduced ejection fraction, prior myocardial infarction, or angina.
+
+ACE inhibitors and ARBs should not be combined due to increased risk of hypotension, hyperkalemia, and acute kidney injury. This combination is specifically contraindicated.
+
+Special Populations
+In patients with CKD, ACE inhibitors or ARBs are preferred due to renoprotective effects, particularly in the presence of proteinuria. Target BP in CKD is less than 130/80 mmHg. In patients with diabetes mellitus, target BP is also less than 130/80 mmHg. Thiazides, ACEi/ARB, and CCBs are all appropriate first-line choices. In Black patients without CKD or heart failure, thiazide diuretics and CCBs are preferred as initial therapy over ACEi/ARBs due to lesser efficacy of the latter in this population.
+
+Resistant Hypertension
+Resistant hypertension is defined as BP that remains above goal despite the concurrent use of three antihypertensive agents of different classes, commonly including a long-acting CCB, a RAS blocker (ACEi or ARB), and a diuretic at maximum or maximally tolerated doses. True resistant hypertension should be distinguished from pseudoresistance due to medication nonadherence, white coat effect, or suboptimal measurement technique. Spironolactone at 25-50 mg daily is the preferred fourth-line agent for resistant hypertension.
+
+Hypertensive Urgency and Emergency
+Hypertensive urgency is defined as severely elevated BP (greater than 180/120 mmHg) without acute target-organ damage. It is typically managed with oral antihypertensive agents and close follow-up; IV agents are not required. Hypertensive emergency involves severely elevated BP with evidence of acute target-organ damage such as hypertensive encephalopathy, acute coronary syndrome, acute heart failure, aortic dissection, or eclampsia. Management requires admission to an ICU-level setting and IV antihypertensive therapy with a goal of reducing mean arterial pressure by no more than 25% within the first hour, then to 160/100-110 mmHg over the next 2-6 hours to avoid ischemia from rapid BP reduction.

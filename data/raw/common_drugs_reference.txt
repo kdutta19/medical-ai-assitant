@@ -1,0 +1,47 @@
+Clinical Drug Reference — Common Medications
+
+Metformin (Glucophage)
+Class: Biguanide antidiabetic.
+Mechanism: Decreases hepatic glucose production, reduces intestinal glucose absorption, and improves peripheral insulin sensitivity via AMPK activation.
+Dosing: Start 500 mg PO BID or 850 mg PO once daily with meals; increase by 500 mg weekly as tolerated. Max dose 2550 mg/day. Extended-release formulation (Metformin XR) may reduce GI adverse effects.
+Contraindications: eGFR less than 30 mL/min/1.73m2; iodinated contrast administration (hold for 48 hours); acute or chronic metabolic acidosis including diabetic ketoacidosis; hepatic impairment (increased risk of lactic acidosis).
+Adverse effects: Nausea, diarrhea, abdominal discomfort (most common, often transient); lactic acidosis (rare, risk increased with renal/hepatic impairment, alcohol use, contrast); vitamin B12 deficiency with long-term use.
+Monitoring: eGFR at baseline, annually, and before dose escalation; Vitamin B12 levels periodically.
+
+Lisinopril (Prinivil, Zestril)
+Class: ACE inhibitor.
+Mechanism: Inhibits conversion of angiotensin I to angiotensin II, reducing vasoconstriction and aldosterone secretion.
+Dosing for hypertension: 10 mg PO once daily; titrate to 20-40 mg once daily as tolerated.
+Dosing for heart failure: Start 2.5-5 mg PO once daily; target dose 20-40 mg once daily.
+Dosing for post-MI: 5 mg PO within 24 hours, then 5 mg after 24 hours, then 10 mg after 48 hours, then 10 mg once daily.
+Contraindications: History of ACE inhibitor-induced angioedema; bilateral renal artery stenosis; pregnancy (Category D, teratogenic); concurrent use with aliskiren in patients with diabetes.
+Adverse effects: Dry cough (10-15%); hypotension (especially first dose); hyperkalemia; acute kidney injury (usually reversible); angioedema (rare but life-threatening, more common in Black patients).
+Monitoring: Serum creatinine and potassium within 1-2 weeks of initiation and after dose increases; BP.
+
+Atorvastatin (Lipitor)
+Class: HMG-CoA reductase inhibitor (statin).
+Mechanism: Competitively inhibits HMG-CoA reductase, the rate-limiting enzyme in cholesterol synthesis, leading to upregulation of hepatic LDL receptors.
+Dosing: 10-80 mg PO once daily, at any time of day. High-intensity: 40-80 mg. Moderate-intensity: 10-20 mg.
+Contraindications: Active liver disease; unexplained persistent elevations of serum transaminases; pregnancy; breastfeeding.
+Adverse effects: Myopathy (muscle pain, weakness); rhabdomyolysis (rare, risk increased with CYP3A4 inhibitors such as clarithromycin, itraconazole, cyclosporine); elevated liver enzymes; new-onset diabetes (class effect, especially at high doses).
+Drug interactions: Strong CYP3A4 inhibitors increase atorvastatin levels significantly; avoid doses greater than 20 mg with clarithromycin or itraconazole. Gemfibrozil increases risk of myopathy; avoid combination or use with caution.
+Monitoring: Lipid panel 4-12 weeks after initiation; CK if myopathy symptoms develop; baseline LFTs.
+
+Amoxicillin-Clavulanate (Augmentin)
+Class: Beta-lactam / beta-lactamase inhibitor combination.
+Mechanism: Amoxicillin inhibits bacterial cell wall synthesis; clavulanate inhibits beta-lactamases produced by resistant organisms.
+Spectrum: Gram-positive cocci (streptococci, MSSA), gram-negative rods (H. influenzae, E. coli, Klebsiella), anaerobes.
+Dosing: 875/125 mg PO BID or 500/125 mg PO TID for most infections. Duration varies: 5-7 days for uncomplicated respiratory infections, 7-10 days for sinusitis, 3-7 days for uncomplicated UTI in women.
+Renal adjustment: CrCl 10-30 mL/min: 500/125 mg q12h. CrCl less than 10 mL/min: 500/125 mg q24h. Hemodialysis patients receive an additional dose after dialysis.
+Contraindications: History of cholestatic jaundice or hepatic dysfunction associated with amoxicillin-clavulanate; penicillin hypersensitivity (cross-reactivity approximately 1-2% with true penicillin allergy).
+Adverse effects: Diarrhea (most common, due to clavulanate); nausea, vomiting; hepatotoxicity (rare, more common in older males and with prolonged courses); Clostridium difficile infection.
+
+Ondansetron (Zofran)
+Class: 5-HT3 receptor antagonist (antiemetic).
+Mechanism: Selectively blocks serotonin 5-HT3 receptors peripherally (vagal nerve terminals in GI tract) and centrally (chemoreceptor trigger zone).
+Dosing for PONV/chemotherapy-induced nausea: 4-8 mg IV/PO. May repeat 4 mg q4-8h PRN.
+Dosing for severe nausea and vomiting: 0.15 mg/kg IV over 15 minutes (for chemotherapy).
+Contraindications: Congenital long QT syndrome; concurrent use with apomorphine.
+Adverse effects: Headache; constipation; QT prolongation (dose-dependent, particularly at IV doses greater than 32 mg); serotonin syndrome (rare, with concomitant serotonergic agents).
+Drug interactions: QT-prolonging drugs (avoid combination or monitor closely); serotonergic medications (risk of serotonin syndrome).
+Monitoring: ECG before use in patients with cardiac risk factors or electrolyte abnormalities; electrolytes (hypokalemia and hypomagnesemia increase QT risk).

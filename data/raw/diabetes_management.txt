@@ -1,0 +1,24 @@
+ADA Standards of Medical Care in Diabetes — Key Clinical Points
+
+Diagnostic Criteria
+Diabetes mellitus is diagnosed by any of the following criteria: fasting plasma glucose (FPG) of 126 mg/dL or higher after at least 8 hours of fasting; 2-hour plasma glucose of 200 mg/dL or higher during an oral glucose tolerance test (OGTT) using 75 g anhydrous glucose; HbA1c of 6.5% or higher; or random plasma glucose of 200 mg/dL or higher in a patient with classic hyperglycemic symptoms. In the absence of unequivocal hyperglycemia, a single abnormal test should be confirmed by repeat testing. Prediabetes is defined as FPG 100-125 mg/dL (impaired fasting glucose), 2h-PG 140-199 mg/dL on OGTT (impaired glucose tolerance), or HbA1c 5.7-6.4%.
+
+Glycemic Targets
+For most non-pregnant adults with diabetes, an HbA1c target of less than 7.0% is appropriate. A more stringent target of less than 6.5% may be appropriate for patients with short duration of diabetes, long life expectancy, no significant cardiovascular disease, and no significant hypoglycemia if achievable without substantial burden. A less stringent target of less than 8.0% is appropriate for patients with history of severe hypoglycemia, limited life expectancy, advanced microvascular or macrovascular complications, extensive comorbid conditions, or long-standing diabetes with difficulty achieving target despite education and multiple agents. Fasting glucose target is 80-130 mg/dL and postprandial glucose target is less than 180 mg/dL.
+
+Pharmacologic Management — Type 2 Diabetes
+Metformin remains the preferred initial pharmacologic agent for type 2 diabetes in the absence of contraindications, primarily due to its efficacy, safety profile, low cost, and potential cardiovascular benefits. It is contraindicated in eGFR less than 30 mL/min/1.73m2.
+
+For patients with established ASCVD or high cardiovascular risk, GLP-1 receptor agonists with proven cardiovascular benefit (liraglutide, semaglutide, dulaglutide) or SGLT-2 inhibitors with proven cardiovascular benefit (empagliflozin, canagliflozin, dapagliflozin) are recommended as add-on therapy to metformin regardless of HbA1c. For patients with heart failure with reduced ejection fraction or CKD, SGLT-2 inhibitors are particularly preferred due to cardiorenal protective effects.
+
+For patients without established ASCVD and whose primary concern is avoiding hypoglycemia, GLP-1 RA or SGLT-2 inhibitors are preferred additions after metformin. Insulin therapy may be initiated at any stage when hyperglycemia is severe (HbA1c greater than 10%, glucose greater than 300 mg/dL, or symptomatic hyperglycemia).
+
+Cardiovascular Risk Reduction
+Statin therapy is recommended for all patients with diabetes aged 40-75 years. High-intensity statin (atorvastatin 40-80 mg or rosuvastatin 20-40 mg) is recommended for patients with established ASCVD. Moderate-intensity statin is recommended for patients without ASCVD. Low-dose aspirin (75-162 mg daily) is recommended for secondary prevention in patients with ASCVD. For primary prevention, aspirin is not routinely recommended but may be considered in high-risk patients after discussion of risks and benefits.
+
+Blood pressure target in patients with diabetes and hypertension is less than 130/80 mmHg. ACEi or ARB are preferred in patients with albuminuria. LDL-cholesterol target in high-risk patients (established ASCVD or multiple risk factors) is less than 70 mg/dL; in very high-risk patients with prior cardiovascular events, a target of less than 55 mg/dL is reasonable.
+
+Microvascular Complications
+Diabetic kidney disease is detected by measurement of urine albumin-to-creatinine ratio (UACR) and eGFR annually. Microalbuminuria is defined as UACR 30-300 mg/g; macroalbuminuria is UACR greater than 300 mg/g. ACEi or ARB are indicated in patients with albuminuria to slow progression. SGLT-2 inhibitors are recommended for patients with CKD and type 2 diabetes to reduce CKD progression.
+
+Diabetic retinopathy screening should be performed at diagnosis for type 2 diabetes and within 5 years of diagnosis for type 1 diabetes, then annually. Diabetic peripheral neuropathy is assessed by loss of protective sensation using a 10-g monofilament examination annually. All patients should receive foot inspection at every visit and comprehensive foot examination at least annually.

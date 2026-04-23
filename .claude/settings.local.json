@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rm c:/KAUSHIK/python-workspace/medical-ai-assitant/frontend/public/index.html)",
+      "Bash(rmdir c:/KAUSHIK/python-workspace/medical-ai-assitant/frontend/public)",
+      "Bash(mkdir -p c:/KAUSHIK/python-workspace/medical-ai-assitant/backend/app/rag)",
+      "Bash(mkdir -p c:/KAUSHIK/python-workspace/medical-ai-assitant/scripts)",
+      "Bash(mkdir -p c:/KAUSHIK/python-workspace/medical-ai-assitant/data/raw)",
+      "Bash(mkdir -p c:/KAUSHIK/python-workspace/medical-ai-assitant/data/index)",
+      "Bash(/c/Users/Kaushik/anaconda3/python.exe scripts/ingest_data.py)",
+      "Bash(/c/Users/Kaushik/anaconda3/python.exe scripts/test_retrieval.py)"
+    ]
+  }
+}
