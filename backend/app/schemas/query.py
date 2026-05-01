@@ -3,6 +3,13 @@ from typing import Optional
 from enum import Enum
 
 
+class RouteCategory(str, Enum):
+    treatment = "treatment"
+    diagnosis = "diagnosis"
+    lifestyle = "lifestyle"
+    general   = "general"
+
+
 class QueryType(str, Enum):
     differential_diagnosis = "differential_diagnosis"
     drug_reference = "drug_reference"
@@ -43,6 +50,16 @@ class QueryResponse(BaseModel):
     context_used: bool = Field(
         default=False,
         description="Whether RAG context was available and injected into the prompt",
+    )
+    route_category: Optional[RouteCategory] = Field(
+        default=None,
+        description="ML-predicted query route category",
+    )
+    route_confidence: Optional[float] = Field(
+        default=None,
+        ge=0.0,
+        le=1.0,
+        description="Classifier confidence for the predicted route category",
     )
     disclaimer: str = (
         "This response is for clinical decision support only. "

@@ -18,15 +18,16 @@ from pathlib import Path
 from app.services.claude_service import claude_service, MODEL
 from app.services.guardrails_service import guardrails_service, GuardrailStatus
 from app.services.audit_service import log_query
+from app.ml.inference import get_classifier, ClassificationResult
 from app.rag.retriever import retrieve, format_context, DEFAULT_INDEX_DIR
 from app.schemas.query import QueryRequest, QueryResponse, QueryType, Source
 from app.core.logging import get_logger
 
 logger = get_logger(__name__)
 
-# Retrieval hyper-parameters
-TOP_K = 6
-SCORE_THRESHOLD = 0.30
+# Fallback retrieval params (used if classifier model is unavailable)
+_DEFAULT_TOP_K = 6
+_DEFAULT_SCORE_THRESHOLD = 0.30
 
 
 class RAGService:
@@ -45,6 +46,7 @@ class RAGService:
         t_start = time.monotonic()
 
         # ── 0. Input guardrails ────────────────────────────────────────
+        # (runs before classifier — no point classifying blocked queries)
         input_check = guardrails_service.check_input(request.question, request.patient_context)
         if input_check.status == GuardrailStatus.BLOCKED:
             logger.warning(
@@ -68,19 +70,33 @@ class RAGService:
             )
             return response
 
-        # ── 1. Retrieve ────────────────────────────────────────────────
+        # ── 1. ML route classification ────────────────────────────────
+        route: ClassificationResult | None = None
+        top_k = _DEFAULT_TOP_K
+        score_threshold = _DEFAULT_SCORE_THRESHOLD
+        try:
+            route = get_classifier().classify(request.question)
+            top_k = route.retrieval.top_k
+            score_threshold = route.retrieval.score_threshold
+        except FileNotFoundError:
+            logger.warning(
+                "Classifier model not found — using default retrieval params. "
+                "Run: python backend/app/ml/train.py"
+            )
+
+        # ── 2. Retrieve ────────────────────────────────────────────────
         chunks = retrieve(
             query=request.question,
-            top_k=TOP_K,
-            score_threshold=SCORE_THRESHOLD,
+            top_k=top_k,
+            score_threshold=score_threshold,
             index_dir=index_dir,
         )
 
-        # ── 2. Format context ──────────────────────────────────────────
+        # ── 3. Format context ──────────────────────────────────────────
         rag_context = format_context(chunks)
         context_used = len(chunks) > 0
 
-        # ── 3. Generate answer via Claude ──────────────────────────────
+        # ── 4. Generate answer via Claude ──────────────────────────────
         answer_text, usage = claude_service.answer(
             question=request.question,
             query_type=request.query_type,
@@ -88,7 +104,7 @@ class RAGService:
             patient_context=request.patient_context,
         )
 
-        # ── 4. Output guardrails ───────────────────────────────────────
+        # ── 5. Output guardrails ───────────────────────────────────────
         output_check = guardrails_service.check_output(answer_text, request.query_type)
         if output_check.status == GuardrailStatus.BLOCKED:
             logger.warning(
@@ -116,10 +132,10 @@ class RAGService:
         if output_check.status == GuardrailStatus.WARNED and output_check.safe_message:
             answer_text = output_check.safe_message
 
-        # ── 5. Build sources ───────────────────────────────────────────
+        # ── 6. Build sources ───────────────────────────────────────────
         sources = _extract_sources(chunks)
 
-        # ── 6. Compute confidence ──────────────────────────────────────
+        # ── 7. Compute confidence ──────────────────────────────────────
         confidence = _compute_confidence(chunks)
 
         latency_ms = int((time.monotonic() - t_start) * 1000)
@@ -131,6 +147,8 @@ class RAGService:
                 "chunks_used": len(chunks),
                 "confidence": round(confidence, 3),
                 "context_used": context_used,
+                "route_category": route.category.value if route else None,
+                "route_confidence": round(route.confidence, 3) if route else None,
                 "input_tokens": usage["input_tokens"],
                 "output_tokens": usage["output_tokens"],
                 "latency_ms": latency_ms,
@@ -145,6 +163,8 @@ class RAGService:
             sources=sources,
             confidence=round(confidence, 3),
             context_used=context_used,
+            route_category=route.category if route else None,
+            route_confidence=round(route.confidence, 3) if route else None,
         )
 
         # ── 7. Audit log ───────────────────────────────────────────────

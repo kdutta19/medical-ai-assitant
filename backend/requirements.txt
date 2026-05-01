@@ -11,6 +11,10 @@ sentence-transformers==3.3.1
 faiss-cpu==1.9.0
 numpy==1.26.4
 
+# ML classifier
+scikit-learn==1.2.2
+joblib==1.2.0
+
 # Database
 sqlalchemy==2.0.36
 psycopg2-binary==2.9.10

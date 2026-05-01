@@ -1,0 +1,19 @@
+{
+  "labels": [
+    "diagnosis",
+    "general",
+    "lifestyle",
+    "treatment"
+  ],
+  "label_to_index": {
+    "diagnosis": 0,
+    "general": 1,
+    "lifestyle": 2,
+    "treatment": 3
+  },
+  "cv_accuracy_mean": 0.7167,
+  "cv_accuracy_std": 0.0667,
+  "n_features": 4042,
+  "n_training_samples": 120,
+  "model_path": "models\\query_classifier.joblib"
+}
