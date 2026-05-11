@@ -1,0 +1,52 @@
+{
+  "summary": {
+    "total_cases": 1,
+    "completed": 1,
+    "errors": 0,
+    "keyword": {
+      "avg_recall": 1.0,
+      "safety_pass_rate": 1.0,
+      "disclaimer_rate": 1.0,
+      "source_cited_rate": 1.0
+    },
+    "judge": {
+      "avg_correctness": null,
+      "avg_completeness": null,
+      "avg_groundedness": null,
+      "avg_composite": null
+    },
+    "performance": {
+      "avg_latency_ms": 20563,
+      "avg_retrieval_confidence": 0.688,
+      "context_used_rate": 1.0
+    }
+  },
+  "cases": [
+    {
+      "id": "T-001",
+      "category": "treatment",
+      "question": "What are the first-line pharmacologic agents for hypertension according to ACC/AHA guidelines?",
+      "answer_preview": "# Hypertension Management Summary — ACC/AHA Guidelines\n\n---\n\n## Diagnostic Thresholds & Treatment Initiation\n\n| Clinical Scenario | Treatment Threshold | BP Goal |\n|---|---|---|\n| Primary prevention, 10-year CVD risk ≥10% | Initiate pharmacotherapy | **<130/80 mmHg** |\n| Known clinical CVD | SBP ≥13",
+      "sources": [
+        "hypertension_guidelines.txt",
+        "diabetes_management.txt",
+        "common_drugs_reference.txt"
+      ],
+      "latency_ms": 20563,
+      "retrieval_confidence": 0.688,
+      "keyword": {
+        "recall": 1.0,
+        "facts_found": [
+          "thiazide",
+          "ACE inhibitor",
+          "calcium channel blocker"
+        ],
+        "facts_missing": [],
+        "safety_pass": true,
+        "disclaimer_present": true
+      },
+      "judge": null,
+      "error": null
+    }
+  ]
+}
