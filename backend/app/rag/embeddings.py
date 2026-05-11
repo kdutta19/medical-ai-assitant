@@ -6,6 +6,9 @@ Model choice: `BAAI/bge-small-en-v1.5`
 - Top-ranked on MTEB for retrieval at small size
 - Fast enough for real-time query embedding without a GPU
 - Can be swapped for `bge-base-en-v1.5` (768-dim) for higher accuracy
+
+BGE (BAAI General Embedding) models are high-performance text embedding models developed by the 
+Beijing Academy of Artificial Intelligence (BAAI), designed for semantic search, retrieval, and similarity tasks.
 """
 import numpy as np
 from functools import lru_cache

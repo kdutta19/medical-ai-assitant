@@ -37,6 +37,7 @@ def _split_sentences(text: str) -> list[str]:
             original = re.sub(r"\\", "", abbr)
             placeholder_map[token] = original
 
+    # Split based on ., !, or ?
     sentences = re.split(r"(?<=[.!?])\s+", protected)
 
     restored = []

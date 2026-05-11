@@ -1,5 +1,8 @@
 import os
+from pathlib import Path
 from pydantic_settings import BaseSettings
+
+_ENV_FILE = str(Path(__file__).resolve().parents[1] / ".env")
 
 
 class Settings(BaseSettings):
@@ -28,7 +31,7 @@ class Settings(BaseSettings):
     ALLOWED_ORIGINS: list[str] = ["http://localhost:5173", "http://localhost:3000"]
 
     class Config:
-        env_file = ".env"
+        env_file = _ENV_FILE
         case_sensitive = True
 
 
